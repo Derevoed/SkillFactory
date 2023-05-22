@@ -1,0 +1,47 @@
+ # Задание 21.9.3
+class Client:
+    def __init__(self, name='', surname='', city='', money_balance=0):
+        self.name = name
+        self.surname = surname
+        self.city = city
+        self.balance = money_balance
+    def datDict(self, cliendDict):
+        self.name = cliendDict.get('name')
+        self.surname = cliendDict.get('surname')
+        self.city = cliendDict.get('city')
+        self.balance = cliendDict.get('money_balance')
+    def personData(self):   # Задание 21.9.4
+        return f'{self.name} {self.surname}, г. {self.city}'
+
+people = [
+    {
+        "name": "Иван",
+        "surname": "Петров",
+        "city": "Москва",
+        "money_balance": 50,
+    },
+    {
+        "name": "Андрей",
+        "surname": "Васечкин",
+        "city": "Новгород",
+        "money_balance": 500,
+    },
+    {
+        "name": "Евгений",
+        "surname": "Иванов",
+        "city": "Санкт-Петербург",
+        "money_balance": 89,
+    },
+]
+
+for i in people:
+    person = Client()
+    person.datDict(i)
+    print(f'{person.name} {person.surname}. {person.city}. Баланс: {person.balance} руб.')
+
+print('-' * 10) # Задание 21.9.4
+print('Список гостей:')
+for n in people:
+    guest = Client()
+    guest.datDict(n)
+    print(guest.personData())

@@ -1,0 +1,6 @@
+pytest
+pytest-selenium
+termcolor
+allure-python-commons
+py
+selenium 4.9.0

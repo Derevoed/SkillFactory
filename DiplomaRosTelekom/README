@@ -23,7 +23,7 @@
 Папка pages содержит следующие файлы:
 
 - auth_page.py - Класс с локаторами страницы авторизации;
-- registration_page.py - Класс с локаторами страницы регистрации; contains PageObject pattern implementation for Python.
+- registration_page.py - Класс с локаторами страницы регистрации;
 - base.py - Содержит шаблон библиотеки PageObject для Python;
 - elements.py - Содержит вспомогательный класс определения веб элементов на веб странице;
 
